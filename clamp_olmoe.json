@@ -1,0 +1,92 @@
+{
+  "model": "allenai/OLMoE-1B-7B-0924",
+  "device": "cuda",
+  "dtype": "torch.bfloat16",
+  "torch": "2.7.0",
+  "layer_idx": 8,
+  "block_name": "model.layers.8.mlp",
+  "n_experts": 64,
+  "k": 8,
+  "tau": 0.02,
+  "clamp_percentiles": {
+    "p999": 0.6459537148475647,
+    "p990": 0.31456059217453003,
+    "p950": 0.17343001067638397,
+    "p900": 0.12558704614639282
+  },
+  "native_ppl": 10.0393777281925,
+  "hard_hook_base_nll": 4.472149279047165,
+  "clamp_sweep": [
+    {
+      "tag": "none",
+      "clamp": null,
+      "M2_tear_median": 0.7046,
+      "cliff_abs_median": 2.8997,
+      "expert_norm_abs_median": 2.0428,
+      "hardG": 16.029536612299868,
+      "hardJump_rel": 0.3103360599806122,
+      "hardJump_abs": 0.21404848992824554,
+      "ppl": 87.54467890031388,
+      "nll": 4.472149279047165,
+      "delta_nll": 0.0
+    },
+    {
+      "tag": "p999",
+      "clamp": 0.6459537148475647,
+      "M2_tear_median": 0.7033,
+      "cliff_abs_median": 2.7918,
+      "expert_norm_abs_median": 1.9997,
+      "hardG": 16.029536612299868,
+      "hardJump_rel": 0.31324964801433075,
+      "hardJump_abs": 0.21404848992824554,
+      "ppl": 336.9807564855789,
+      "nll": 5.820025826305277,
+      "delta_nll": 1.347876547258112
+    },
+    {
+      "tag": "p990",
+      "clamp": 0.31456059217453003,
+      "M2_tear_median": 0.7024,
+      "cliff_abs_median": 2.582,
+      "expert_norm_abs_median": 1.8421,
+      "hardG": 16.027492933982362,
+      "hardJump_rel": 0.31732226590873347,
+      "hardJump_abs": 0.20837904512882233,
+      "ppl": 1517.570007107432,
+      "nll": 7.32486565505402,
+      "delta_nll": 2.852716376006855
+    },
+    {
+      "tag": "p950",
+      "clamp": 0.17343001067638397,
+      "M2_tear_median": 0.7009,
+      "cliff_abs_median": 2.2392,
+      "expert_norm_abs_median": 1.596,
+      "hardG": 16.02654775098604,
+      "hardJump_rel": 0.3094075766019971,
+      "hardJump_abs": 0.1844317764043808,
+      "ppl": 7017.409182911616,
+      "nll": 8.856149366636316,
+      "delta_nll": 4.384000087589151
+    },
+    {
+      "tag": "p900",
+      "clamp": 0.12558704614639282,
+      "M2_tear_median": 0.701,
+      "cliff_abs_median": 1.9654,
+      "expert_norm_abs_median": 1.4032,
+      "hardG": 16.023380347924704,
+      "hardJump_rel": 0.3031678155821355,
+      "hardJump_abs": 0.16407836973667145,
+      "ppl": 18113.04726251639,
+      "nll": 9.80438780080417,
+      "delta_nll": 5.332238521757005
+    }
+  ],
+  "outlier_correlation": {
+    "n_tokens": 498,
+    "norm_vs_distance": -0.04276889084898476,
+    "norm_vs_jump": 0.43680408075770616,
+    "distance_vs_jump": 0.1855974061134654
+  }
+}

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="660" viewBox="0 0 1120 660">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="560.0" y="32" text-anchor="middle" font-size="24" font-weight="700">Directional fragility: normal vs tangent perturbations</text>
+<rect x="90" y="80" width="280" height="360" fill="#fff" stroke="#d0d0d0"/>
+<text x="90" y="64" font-size="20" font-weight="700" fill="#111">k/k+1 flip rate</text>
+<line x1="90.0" y1="80" x2="90.0" y2="440" stroke="#eee"/>
+<text x="90.0" y="464" text-anchor="middle" font-size="13" fill="#444">-0</text>
+<line x1="230.0" y1="80" x2="230.0" y2="440" stroke="#eee"/>
+<text x="230.0" y="464" text-anchor="middle" font-size="13" fill="#444">1</text>
+<line x1="370.0" y1="80" x2="370.0" y2="440" stroke="#eee"/>
+<text x="370.0" y="464" text-anchor="middle" font-size="13" fill="#444">2</text>
+<line x1="90" y1="80.0" x2="370" y2="80.0" stroke="#eee"/>
+<text x="80" y="85.0" text-anchor="end" font-size="13" fill="#444">1.05</text>
+<line x1="90" y1="170.0" x2="370" y2="170.0" stroke="#eee"/>
+<text x="80" y="175.0" text-anchor="end" font-size="13" fill="#444">0.79</text>
+<line x1="90" y1="260.0" x2="370" y2="260.0" stroke="#eee"/>
+<text x="80" y="265.0" text-anchor="end" font-size="13" fill="#444">0.53</text>
+<line x1="90" y1="350.0" x2="370" y2="350.0" stroke="#eee"/>
+<text x="80" y="355.0" text-anchor="end" font-size="13" fill="#444">0.26</text>
+<line x1="90" y1="440.0" x2="370" y2="440.0" stroke="#eee"/>
+<text x="80" y="445.0" text-anchor="end" font-size="13" fill="#444">0.00</text>
+<text x="230.0" y="490" text-anchor="middle" font-size="15" fill="#333">layer</text>
+<rect x="104.5" y="126.4" width="42" height="313.6" fill="#1f77b4" opacity="0.85"/>
+<rect x="197.8" y="115.9" width="42" height="324.1" fill="#1f77b4" opacity="0.85"/>
+<rect x="291.1" y="116.5" width="42" height="323.5" fill="#1f77b4" opacity="0.85"/>
+<rect x="126.9" y="436.9" width="42" height="3.1" fill="#555555" opacity="0.55"/>
+<rect x="220.2" y="438.5" width="42" height="1.5" fill="#555555" opacity="0.55"/>
+<rect x="313.5" y="438.5" width="42" height="1.5" fill="#555555" opacity="0.55"/>
+<text x="136.7" y="515" text-anchor="middle" font-size="13" fill="#333">L0</text>
+<text x="230.0" y="515" text-anchor="middle" font-size="13" fill="#333">L8</text>
+<text x="323.3" y="515" text-anchor="middle" font-size="13" fill="#333">L15</text>
+<rect x="450" y="80" width="280" height="360" fill="#fff" stroke="#d0d0d0"/>
+<text x="450" y="64" font-size="20" font-weight="700" fill="#111">Block jump</text>
+<line x1="450.0" y1="80" x2="450.0" y2="440" stroke="#eee"/>
+<text x="450.0" y="464" text-anchor="middle" font-size="13" fill="#444">-0</text>
+<line x1="590.0" y1="80" x2="590.0" y2="440" stroke="#eee"/>
+<text x="590.0" y="464" text-anchor="middle" font-size="13" fill="#444">1</text>
+<line x1="730.0" y1="80" x2="730.0" y2="440" stroke="#eee"/>
+<text x="730.0" y="464" text-anchor="middle" font-size="13" fill="#444">2</text>
+<line x1="450" y1="80.0" x2="730" y2="80.0" stroke="#eee"/>
+<text x="440" y="85.0" text-anchor="end" font-size="13" fill="#444">0.22</text>
+<line x1="450" y1="170.0" x2="730" y2="170.0" stroke="#eee"/>
+<text x="440" y="175.0" text-anchor="end" font-size="13" fill="#444">0.17</text>
+<line x1="450" y1="260.0" x2="730" y2="260.0" stroke="#eee"/>
+<text x="440" y="265.0" text-anchor="end" font-size="13" fill="#444">0.11</text>
+<line x1="450" y1="350.0" x2="730" y2="350.0" stroke="#eee"/>
+<text x="440" y="355.0" text-anchor="end" font-size="13" fill="#444">0.06</text>
+<line x1="450" y1="440.0" x2="730" y2="440.0" stroke="#eee"/>
+<text x="440" y="445.0" text-anchor="end" font-size="13" fill="#444">0.00</text>
+<text x="590.0" y="490" text-anchor="middle" font-size="15" fill="#333">layer</text>
+<rect x="464.5" y="281.8" width="42" height="158.2" fill="#ff7f0e" opacity="0.85"/>
+<rect x="557.8" y="152.0" width="42" height="288.0" fill="#ff7f0e" opacity="0.85"/>
+<rect x="651.1" y="304.8" width="42" height="135.2" fill="#ff7f0e" opacity="0.85"/>
+<rect x="486.9" y="429.2" width="42" height="10.8" fill="#555555" opacity="0.55"/>
+<rect x="580.2" y="422.1" width="42" height="17.9" fill="#555555" opacity="0.55"/>
+<rect x="673.5" y="427.0" width="42" height="13.0" fill="#555555" opacity="0.55"/>
+<text x="496.7" y="515" text-anchor="middle" font-size="13" fill="#333">L0</text>
+<text x="590.0" y="515" text-anchor="middle" font-size="13" fill="#333">L8</text>
+<text x="683.3" y="515" text-anchor="middle" font-size="13" fill="#333">L15</text>
+<rect x="810" y="80" width="240" height="360" fill="#fff" stroke="#d0d0d0"/>
+<text x="810" y="64" font-size="20" font-weight="700" fill="#111">Downstream KL</text>
+<line x1="810.0" y1="80" x2="810.0" y2="440" stroke="#eee"/>
+<text x="810.0" y="464" text-anchor="middle" font-size="13" fill="#444">-0</text>
+<line x1="930.0" y1="80" x2="930.0" y2="440" stroke="#eee"/>
+<text x="930.0" y="464" text-anchor="middle" font-size="13" fill="#444">1</text>
+<line x1="1050.0" y1="80" x2="1050.0" y2="440" stroke="#eee"/>
+<text x="1050.0" y="464" text-anchor="middle" font-size="13" fill="#444">2</text>
+<line x1="810" y1="80.0" x2="1050" y2="80.0" stroke="#eee"/>
+<text x="800" y="85.0" text-anchor="end" font-size="13" fill="#444">0.02</text>
+<line x1="810" y1="170.0" x2="1050" y2="170.0" stroke="#eee"/>
+<text x="800" y="175.0" text-anchor="end" font-size="13" fill="#444">0.02</text>
+<line x1="810" y1="260.0" x2="1050" y2="260.0" stroke="#eee"/>
+<text x="800" y="265.0" text-anchor="end" font-size="13" fill="#444">0.01</text>
+<line x1="810" y1="350.0" x2="1050" y2="350.0" stroke="#eee"/>
+<text x="800" y="355.0" text-anchor="end" font-size="13" fill="#444">0.01</text>
+<line x1="810" y1="440.0" x2="1050" y2="440.0" stroke="#eee"/>
+<text x="800" y="445.0" text-anchor="end" font-size="13" fill="#444">-0.00</text>
+<text x="930.0" y="490" text-anchor="middle" font-size="15" fill="#333">layer</text>
+<rect x="819.4" y="331.2" width="42" height="102.7" fill="#9467bd" opacity="0.85"/>
+<rect x="899.4" y="171.8" width="42" height="262.2" fill="#9467bd" opacity="0.85"/>
+<rect x="979.4" y="405.8" width="42" height="28.1" fill="#9467bd" opacity="0.85"/>
+<rect x="838.6" y="433.9" width="42" height="4.9" fill="#555555" opacity="0.55"/>
+<rect x="918.6" y="352.0" width="42" height="82.0" fill="#555555" opacity="0.55"/>
+<rect x="998.6" y="432.7" width="42" height="1.2" fill="#555555" opacity="0.55"/>
+<text x="850.0" y="515" text-anchor="middle" font-size="13" fill="#333">L0</text>
+<text x="930.0" y="515" text-anchor="middle" font-size="13" fill="#333">L8</text>
+<text x="1010.0" y="515" text-anchor="middle" font-size="13" fill="#333">L15</text>
+<text x="900" y="530" font-size="14" fill="#222">colored: normal</text>
+<text x="900" y="552" font-size="14" fill="#555">gray: tangent</text>
+<text x="90" y="590" font-size="14" fill="#333">median distance-to-tear / ||h||: L0: 0.24%, L8: 0.34%, L15: 0.33%</text>
+</svg>

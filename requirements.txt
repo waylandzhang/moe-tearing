@@ -1,0 +1,8 @@
+# Figure reproduction (scripts/plot_results.py) needs NOTHING beyond the Python
+# standard library. The packages below are only for re-running the probes on the
+# real models (moe_tear_probe.py / moe_train_probe.py), which needs a GPU.
+torch
+transformers
+numpy<2
+datasets
+tiktoken

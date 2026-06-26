@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="640" viewBox="0 0 1080 640">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="540.0" y="32" text-anchor="middle" font-size="24" font-weight="700">Tear replicates across released MoEs</text>
+<rect x="80" y="80" width="380" height="170" fill="#fff" stroke="#d0d0d0"/>
+<text x="80" y="64" font-size="20" font-weight="700" fill="#111">hardG</text>
+<line x1="80" y1="80.0" x2="460" y2="80.0" stroke="#eee"/>
+<text x="70" y="85.0" text-anchor="end" font-size="13" fill="#444">17.00</text>
+<line x1="80" y1="122.5" x2="460" y2="122.5" stroke="#eee"/>
+<text x="70" y="127.5" text-anchor="end" font-size="13" fill="#444">12.75</text>
+<line x1="80" y1="165.0" x2="460" y2="165.0" stroke="#eee"/>
+<text x="70" y="170.0" text-anchor="end" font-size="13" fill="#444">8.50</text>
+<line x1="80" y1="207.5" x2="460" y2="207.5" stroke="#eee"/>
+<text x="70" y="212.5" text-anchor="end" font-size="13" fill="#444">4.25</text>
+<line x1="80" y1="250.0" x2="460" y2="250.0" stroke="#eee"/>
+<text x="70" y="255.0" text-anchor="end" font-size="13" fill="#444">0.00</text>
+<rect x="140.0" y="90.1" width="70" height="159.9" fill="#9467bd" opacity="0.84"/>
+<rect x="330.0" y="90.1" width="70" height="159.9" fill="#9467bd" opacity="0.84"/>
+<text x="175.0" y="83.1" text-anchor="middle" font-size="14" fill="#222">15.99</text>
+<text x="175.0" y="284" text-anchor="middle" font-size="14" fill="#333">OLMoE</text>
+<text x="365.0" y="83.1" text-anchor="middle" font-size="14" fill="#222">15.99</text>
+<text x="365.0" y="284" text-anchor="middle" font-size="14" fill="#333">Qwen-MoE</text>
+<rect x="580" y="80" width="380" height="170" fill="#fff" stroke="#d0d0d0"/>
+<text x="580" y="64" font-size="20" font-weight="700" fill="#111">M2 cliff</text>
+<line x1="580" y1="80.0" x2="960" y2="80.0" stroke="#eee"/>
+<text x="570" y="85.0" text-anchor="end" font-size="13" fill="#444">0.80</text>
+<line x1="580" y1="122.5" x2="960" y2="122.5" stroke="#eee"/>
+<text x="570" y="127.5" text-anchor="end" font-size="13" fill="#444">0.60</text>
+<line x1="580" y1="165.0" x2="960" y2="165.0" stroke="#eee"/>
+<text x="570" y="170.0" text-anchor="end" font-size="13" fill="#444">0.40</text>
+<line x1="580" y1="207.5" x2="960" y2="207.5" stroke="#eee"/>
+<text x="570" y="212.5" text-anchor="end" font-size="13" fill="#444">0.20</text>
+<line x1="580" y1="250.0" x2="960" y2="250.0" stroke="#eee"/>
+<text x="570" y="255.0" text-anchor="end" font-size="13" fill="#444">0.00</text>
+<rect x="640.0" y="101.8" width="70" height="148.2" fill="#1f77b4" opacity="0.84"/>
+<rect x="830.0" y="99.1" width="70" height="150.9" fill="#1f77b4" opacity="0.84"/>
+<text x="675.0" y="94.8" text-anchor="middle" font-size="14" fill="#222">0.70</text>
+<text x="675.0" y="284" text-anchor="middle" font-size="14" fill="#333">OLMoE</text>
+<text x="865.0" y="92.1" text-anchor="middle" font-size="14" fill="#222">0.71</text>
+<text x="865.0" y="284" text-anchor="middle" font-size="14" fill="#333">Qwen-MoE</text>
+<rect x="80" y="360" width="380" height="170" fill="#fff" stroke="#d0d0d0"/>
+<text x="80" y="344" font-size="20" font-weight="700" fill="#111">near-boundary</text>
+<line x1="80" y1="360.0" x2="460" y2="360.0" stroke="#eee"/>
+<text x="70" y="365.0" text-anchor="end" font-size="13" fill="#444">1.05</text>
+<line x1="80" y1="402.5" x2="460" y2="402.5" stroke="#eee"/>
+<text x="70" y="407.5" text-anchor="end" font-size="13" fill="#444">0.79</text>
+<line x1="80" y1="445.0" x2="460" y2="445.0" stroke="#eee"/>
+<text x="70" y="450.0" text-anchor="end" font-size="13" fill="#444">0.53</text>
+<line x1="80" y1="487.5" x2="460" y2="487.5" stroke="#eee"/>
+<text x="70" y="492.5" text-anchor="end" font-size="13" fill="#444">0.26</text>
+<line x1="80" y1="530.0" x2="460" y2="530.0" stroke="#eee"/>
+<text x="70" y="535.0" text-anchor="end" font-size="13" fill="#444">0.00</text>
+<rect x="140.0" y="368.1" width="70" height="161.9" fill="#2ca02c" opacity="0.84"/>
+<rect x="330.0" y="371.0" width="70" height="159.0" fill="#2ca02c" opacity="0.84"/>
+<text x="175.0" y="361.1" text-anchor="middle" font-size="14" fill="#222">1.00</text>
+<text x="175.0" y="564" text-anchor="middle" font-size="14" fill="#333">OLMoE</text>
+<text x="365.0" y="364.0" text-anchor="middle" font-size="14" fill="#222">0.98</text>
+<text x="365.0" y="564" text-anchor="middle" font-size="14" fill="#333">Qwen-MoE</text>
+<rect x="580" y="360" width="380" height="170" fill="#fff" stroke="#d0d0d0"/>
+<text x="580" y="344" font-size="20" font-weight="700" fill="#111">block jump</text>
+<line x1="580" y1="360.0" x2="960" y2="360.0" stroke="#eee"/>
+<text x="570" y="365.0" text-anchor="end" font-size="13" fill="#444">0.45</text>
+<line x1="580" y1="402.5" x2="960" y2="402.5" stroke="#eee"/>
+<text x="570" y="407.5" text-anchor="end" font-size="13" fill="#444">0.34</text>
+<line x1="580" y1="445.0" x2="960" y2="445.0" stroke="#eee"/>
+<text x="570" y="450.0" text-anchor="end" font-size="13" fill="#444">0.23</text>
+<line x1="580" y1="487.5" x2="960" y2="487.5" stroke="#eee"/>
+<text x="570" y="492.5" text-anchor="end" font-size="13" fill="#444">0.11</text>
+<line x1="580" y1="530.0" x2="960" y2="530.0" stroke="#eee"/>
+<text x="570" y="535.0" text-anchor="end" font-size="13" fill="#444">0.00</text>
+<rect x="640.0" y="439.6" width="70" height="90.4" fill="#ff7f0e" opacity="0.84"/>
+<rect x="830.0" y="390.8" width="70" height="139.2" fill="#ff7f0e" opacity="0.84"/>
+<text x="675.0" y="432.6" text-anchor="middle" font-size="14" fill="#222">0.24</text>
+<text x="675.0" y="564" text-anchor="middle" font-size="14" fill="#333">OLMoE</text>
+<text x="865.0" y="383.8" text-anchor="middle" font-size="14" fill="#222">0.37</text>
+<text x="865.0" y="564" text-anchor="middle" font-size="14" fill="#333">Qwen-MoE</text>
+<text x="80" y="610" font-size="13" fill="#555">Separate y-scales make the smaller M2 / prevalence / jump metrics readable; values are per-layer aggregates.</text>
+</svg>

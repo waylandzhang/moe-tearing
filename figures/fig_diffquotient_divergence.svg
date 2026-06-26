@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="500.0" y="32" text-anchor="middle" font-size="23" font-weight="700">Difference-quotient divergence: hard top-k tears, soft/tied stay continuous</text>
+<rect x="90" y="80" width="820" height="360" fill="#fff" stroke="#d0d0d0"/>
+<text x="90" y="64" font-size="20" font-weight="700" fill="#111">Max difference quotient ||dy||/||dx|| (8-path median)</text>
+<line x1="90.0" y1="80" x2="90.0" y2="440" stroke="#eee"/>
+<text x="90.0" y="464" text-anchor="middle" font-size="13" fill="#444">0</text>
+<line x1="144.7" y1="80" x2="144.7" y2="440" stroke="#eee"/>
+<text x="144.7" y="464" text-anchor="middle" font-size="13" fill="#444">1</text>
+<line x1="199.3" y1="80" x2="199.3" y2="440" stroke="#eee"/>
+<text x="199.3" y="464" text-anchor="middle" font-size="13" fill="#444">2</text>
+<line x1="254.0" y1="80" x2="254.0" y2="440" stroke="#eee"/>
+<text x="254.0" y="464" text-anchor="middle" font-size="13" fill="#444">3</text>
+<line x1="308.7" y1="80" x2="308.7" y2="440" stroke="#eee"/>
+<text x="308.7" y="464" text-anchor="middle" font-size="13" fill="#444">4</text>
+<line x1="363.3" y1="80" x2="363.3" y2="440" stroke="#eee"/>
+<text x="363.3" y="464" text-anchor="middle" font-size="13" fill="#444">5</text>
+<line x1="418.0" y1="80" x2="418.0" y2="440" stroke="#eee"/>
+<text x="418.0" y="464" text-anchor="middle" font-size="13" fill="#444">6</text>
+<line x1="472.7" y1="80" x2="472.7" y2="440" stroke="#eee"/>
+<text x="472.7" y="464" text-anchor="middle" font-size="13" fill="#444">7</text>
+<line x1="527.3" y1="80" x2="527.3" y2="440" stroke="#eee"/>
+<text x="527.3" y="464" text-anchor="middle" font-size="13" fill="#444">8</text>
+<line x1="582.0" y1="80" x2="582.0" y2="440" stroke="#eee"/>
+<text x="582.0" y="464" text-anchor="middle" font-size="13" fill="#444">9</text>
+<line x1="636.7" y1="80" x2="636.7" y2="440" stroke="#eee"/>
+<text x="636.7" y="464" text-anchor="middle" font-size="13" fill="#444">10</text>
+<line x1="691.3" y1="80" x2="691.3" y2="440" stroke="#eee"/>
+<text x="691.3" y="464" text-anchor="middle" font-size="13" fill="#444">11</text>
+<line x1="746.0" y1="80" x2="746.0" y2="440" stroke="#eee"/>
+<text x="746.0" y="464" text-anchor="middle" font-size="13" fill="#444">12</text>
+<line x1="800.7" y1="80" x2="800.7" y2="440" stroke="#eee"/>
+<text x="800.7" y="464" text-anchor="middle" font-size="13" fill="#444">13</text>
+<line x1="855.3" y1="80" x2="855.3" y2="440" stroke="#eee"/>
+<text x="855.3" y="464" text-anchor="middle" font-size="13" fill="#444">14</text>
+<line x1="910.0" y1="80" x2="910.0" y2="440" stroke="#eee"/>
+<text x="910.0" y="464" text-anchor="middle" font-size="13" fill="#444">15</text>
+<line x1="90" y1="80.0" x2="910" y2="80.0" stroke="#eee"/>
+<text x="80" y="85.0" text-anchor="end" font-size="13" fill="#444">17.93</text>
+<line x1="90" y1="170.0" x2="910" y2="170.0" stroke="#eee"/>
+<text x="80" y="175.0" text-anchor="end" font-size="13" fill="#444">13.45</text>
+<line x1="90" y1="260.0" x2="910" y2="260.0" stroke="#eee"/>
+<text x="80" y="265.0" text-anchor="end" font-size="13" fill="#444">8.96</text>
+<line x1="90" y1="350.0" x2="910" y2="350.0" stroke="#eee"/>
+<text x="80" y="355.0" text-anchor="end" font-size="13" fill="#444">4.48</text>
+<line x1="90" y1="440.0" x2="910" y2="440.0" stroke="#eee"/>
+<text x="80" y="445.0" text-anchor="end" font-size="13" fill="#444">0.00</text>
+<text x="500.0" y="490" text-anchor="middle" font-size="15" fill="#333">OLMoE layer</text>
+<line x1="90" y1="419.9" x2="910" y2="419.9" stroke="#bbb" stroke-dasharray="6 4"/>
+<text x="904" y="411.9" text-anchor="end" font-size="13" fill="#999">continuous baseline = 1x</text>
+<polyline points="90.00,118.77 144.67,119.07 199.33,118.91 254.00,118.67 308.67,118.88 363.33,118.75 418.00,118.86 472.67,118.57 527.33,118.65 582.00,118.60 636.67,118.91 691.33,119.21 746.00,119.31 800.67,118.94 855.33,119.56 910.00,120.14" fill="none" stroke="#9467bd" stroke-width="2.2" opacity="0.95"/>
+<circle cx="90.0" cy="118.8" r="3.5" fill="#9467bd" opacity="0.9"/>
+<circle cx="144.7" cy="119.1" r="3.5" fill="#9467bd" opacity="0.9"/>
+<circle cx="199.3" cy="118.9" r="3.5" fill="#9467bd" opacity="0.9"/>
+<circle cx="254.0" cy="118.7" r="3.5" fill="#9467bd" opacity="0.9"/>
+<circle cx="308.7" cy="118.9" r="3.5" fill="#9467bd" opacity="0.9"/>
+<circle cx="363.3" cy="118.8" r="3.5" fill="#9467bd" opacity="0.9"/>
+<circle cx="418.0" cy="118.9" r="3.5" fill="#9467bd" opacity="0.9"/>
+<circle cx="472.7" cy="118.6" r="3.5" fill="#9467bd" opacity="0.9"/>
+<circle cx="527.3" cy="118.6" r="3.5" fill="#9467bd" opacity="0.9"/>
+<circle cx="582.0" cy="118.6" r="3.5" fill="#9467bd" opacity="0.9"/>
+<circle cx="636.7" cy="118.9" r="3.5" fill="#9467bd" opacity="0.9"/>
+<circle cx="691.3" cy="119.2" r="3.5" fill="#9467bd" opacity="0.9"/>
+<circle cx="746.0" cy="119.3" r="3.5" fill="#9467bd" opacity="0.9"/>
+<circle cx="800.7" cy="118.9" r="3.5" fill="#9467bd" opacity="0.9"/>
+<circle cx="855.3" cy="119.6" r="3.5" fill="#9467bd" opacity="0.9"/>
+<circle cx="910.0" cy="120.1" r="3.5" fill="#9467bd" opacity="0.9"/>
+<polyline points="90.00,419.82 144.67,419.85 199.33,419.84 254.00,419.84 308.67,419.86 363.33,419.84 418.00,419.87 472.67,419.86 527.33,419.87 582.00,419.86 636.67,419.85 691.33,419.86 746.00,419.86 800.67,419.85 855.33,419.85 910.00,419.86" fill="none" stroke="#1f77b4" stroke-width="2.2" opacity="0.95"/>
+<circle cx="90.0" cy="419.8" r="3.5" fill="#1f77b4" opacity="0.9"/>
+<circle cx="144.7" cy="419.9" r="3.5" fill="#1f77b4" opacity="0.9"/>
+<circle cx="199.3" cy="419.8" r="3.5" fill="#1f77b4" opacity="0.9"/>
+<circle cx="254.0" cy="419.8" r="3.5" fill="#1f77b4" opacity="0.9"/>
+<circle cx="308.7" cy="419.9" r="3.5" fill="#1f77b4" opacity="0.9"/>
+<circle cx="363.3" cy="419.8" r="3.5" fill="#1f77b4" opacity="0.9"/>
+<circle cx="418.0" cy="419.9" r="3.5" fill="#1f77b4" opacity="0.9"/>
+<circle cx="472.7" cy="419.9" r="3.5" fill="#1f77b4" opacity="0.9"/>
+<circle cx="527.3" cy="419.9" r="3.5" fill="#1f77b4" opacity="0.9"/>
+<circle cx="582.0" cy="419.9" r="3.5" fill="#1f77b4" opacity="0.9"/>
+<circle cx="636.7" cy="419.9" r="3.5" fill="#1f77b4" opacity="0.9"/>
+<circle cx="691.3" cy="419.9" r="3.5" fill="#1f77b4" opacity="0.9"/>
+<circle cx="746.0" cy="419.9" r="3.5" fill="#1f77b4" opacity="0.9"/>
+<circle cx="800.7" cy="419.9" r="3.5" fill="#1f77b4" opacity="0.9"/>
+<circle cx="855.3" cy="419.9" r="3.5" fill="#1f77b4" opacity="0.9"/>
+<circle cx="910.0" cy="419.9" r="3.5" fill="#1f77b4" opacity="0.9"/>
+<polyline points="90.00,419.89 144.67,419.89 199.33,419.89 254.00,419.88 308.67,419.88 363.33,419.87 418.00,419.87 472.67,419.88 527.33,419.88 582.00,419.88 636.67,419.88 691.33,419.87 746.00,419.88 800.67,419.88 855.33,419.88 910.00,419.88" fill="none" stroke="#555555" stroke-width="2.2" opacity="0.95"/>
+<circle cx="90.0" cy="419.9" r="3.5" fill="#555555" opacity="0.9"/>
+<circle cx="144.7" cy="419.9" r="3.5" fill="#555555" opacity="0.9"/>
+<circle cx="199.3" cy="419.9" r="3.5" fill="#555555" opacity="0.9"/>
+<circle cx="254.0" cy="419.9" r="3.5" fill="#555555" opacity="0.9"/>
+<circle cx="308.7" cy="419.9" r="3.5" fill="#555555" opacity="0.9"/>
+<circle cx="363.3" cy="419.9" r="3.5" fill="#555555" opacity="0.9"/>
+<circle cx="418.0" cy="419.9" r="3.5" fill="#555555" opacity="0.9"/>
+<circle cx="472.7" cy="419.9" r="3.5" fill="#555555" opacity="0.9"/>
+<circle cx="527.3" cy="419.9" r="3.5" fill="#555555" opacity="0.9"/>
+<circle cx="582.0" cy="419.9" r="3.5" fill="#555555" opacity="0.9"/>
+<circle cx="636.7" cy="419.9" r="3.5" fill="#555555" opacity="0.9"/>
+<circle cx="691.3" cy="419.9" r="3.5" fill="#555555" opacity="0.9"/>
+<circle cx="746.0" cy="419.9" r="3.5" fill="#555555" opacity="0.9"/>
+<circle cx="800.7" cy="419.9" r="3.5" fill="#555555" opacity="0.9"/>
+<circle cx="855.3" cy="419.9" r="3.5" fill="#555555" opacity="0.9"/>
+<circle cx="910.0" cy="419.9" r="3.5" fill="#555555" opacity="0.9"/>
+<rect x="690" y="235" width="18" height="11" fill="#9467bd"/>
+<text x="716" y="245" font-size="14" fill="#222">hard top-k  (~16x)</text>
+<rect x="690" y="257" width="18" height="11" fill="#1f77b4"/>
+<text x="716" y="267" font-size="14" fill="#222">soft edge  (~1x)</text>
+<rect x="690" y="279" width="18" height="11" fill="#555555"/>
+<text x="716" y="289" font-size="14" fill="#222">tied control  (~1x)</text>
+<text x="90" y="500" font-size="13" fill="#555">Hard top-k diverges at the C0 discontinuity (~16x) at every layer; continuity-guaranteed controls stay ~1x.</text>
+</svg>
