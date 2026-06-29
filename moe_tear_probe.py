@@ -91,10 +91,26 @@ def _gate_logits(block, h):
 # magnitude of what a swapped expert contributes WITHOUT touching the discontinuity.
 _EXPERT_CLAMP = None
 
+# Whether to renormalize the gathered top-k router weights (norm_topk_prob).
+# The released OLMoE-1B-7B-0924 and Qwen1.5-MoE-A2.7B configs both ship
+# norm_topk_prob=false: the model gathers full-softmax weights at the top-k
+# slots WITHOUT renormalizing. set_norm_topk() honors that per model config.
+_NORM_TOPK = True
+
 
 def set_expert_clamp(c):
     global _EXPERT_CLAMP
     _EXPERT_CLAMP = c
+
+
+def set_norm_topk(model, override="auto"):
+    """Set the global renorm convention from the model config (override in
+    {auto,on,off}; auto reads model.config.norm_topk_prob)."""
+    global _NORM_TOPK
+    cfg = bool(getattr(model.config, "norm_topk_prob", True))
+    _NORM_TOPK = cfg if override == "auto" else (override == "on")
+    print(f"[gating] norm_topk_prob config={cfg} override={override} -> renorm={_NORM_TOPK}")
+    return _NORM_TOPK
 
 
 def _expert_forward(block, e, h):
@@ -136,7 +152,8 @@ def _combine(block, h, weights):
 def forward_hard(block, h, k):
     gates, _ = block_gates(block, h)
     topv, topi = gates.topk(k, dim=-1)
-    topv = topv / topv.sum(dim=-1, keepdim=True)          # norm_topk_prob
+    if _NORM_TOPK:
+        topv = topv / topv.sum(dim=-1, keepdim=True)      # norm_topk_prob (per model config)
     w = torch.zeros_like(gates)
     w.scatter_(1, topi, topv)
     return _combine(block, h, w), (w > 0)
@@ -149,7 +166,10 @@ def forward_hard_tied(block, h, k):
     artefact of the routing/weight arithmetic, not of expert disagreement."""
     gates, _ = block_gates(block, h)
     topv, _ = gates.topk(k, dim=-1)
-    wsum = (topv / topv.sum(dim=-1, keepdim=True)).sum(dim=-1, keepdim=True)  # == 1
+    if _NORM_TOPK:
+        wsum = (topv / topv.sum(dim=-1, keepdim=True)).sum(dim=-1, keepdim=True)  # == 1
+    else:
+        wsum = topv.sum(dim=-1, keepdim=True)             # native: gathered top-k mass (< 1)
     return wsum * _expert_forward(block, 0, h), None, None
 
 
@@ -559,6 +579,7 @@ def run_real(args):
     print(f"Loading {args.model} on {device} ({dtype}) ...")
     tok = AutoTokenizer.from_pretrained(args.model)
     model = AutoModelForCausalLM.from_pretrained(args.model, dtype=dtype).to(device)
+    set_norm_topk(model, getattr(args, "norm_topk", "auto"))
     model.eval()
     k = args.k or getattr(model.config, "num_experts_per_tok", 2)
 
@@ -671,6 +692,7 @@ def run_sweep(args):
     print(f"Loading {args.model} on {device} ({dtype}) ...")
     tok = AutoTokenizer.from_pretrained(args.model)
     model = AutoModelForCausalLM.from_pretrained(args.model, dtype=dtype).to(device)
+    set_norm_topk(model, getattr(args, "norm_topk", "auto"))
     model.eval()
     k = args.k or getattr(model.config, "num_experts_per_tok", 2)
 
@@ -997,6 +1019,7 @@ def run_section6(args):
     print(f"Loading {args.model} on {device} ({dtype}) ...")
     tok = AutoTokenizer.from_pretrained(args.model)
     model = AutoModelForCausalLM.from_pretrained(args.model, dtype=dtype).to(device)
+    set_norm_topk(model, getattr(args, "norm_topk", "auto"))
     model.eval()
     k = args.k or getattr(model.config, "num_experts_per_tok", 2)
     blocks = discover_moe_blocks(model)
@@ -1070,6 +1093,7 @@ def run_geometry(args):
     print(f"Loading {args.model} on {device} ({dtype}) ...")
     tok = AutoTokenizer.from_pretrained(args.model)
     model = AutoModelForCausalLM.from_pretrained(args.model, dtype=dtype).to(device)
+    set_norm_topk(model, getattr(args, "norm_topk", "auto"))
     model.eval()
     k = args.k or getattr(model.config, "num_experts_per_tok", 2)
     blocks = discover_moe_blocks(model)
@@ -1241,6 +1265,7 @@ def run_clamp_sweep(args):
     print(f"Loading {args.model} on {device} ({dtype}) ...")
     tok = AutoTokenizer.from_pretrained(args.model)
     model = AutoModelForCausalLM.from_pretrained(args.model, dtype=dtype).to(device)
+    set_norm_topk(model, getattr(args, "norm_topk", "auto"))
     model.eval()
     k = args.k or getattr(model.config, "num_experts_per_tok", 2)
     blocks = discover_moe_blocks(model)
@@ -1683,6 +1708,9 @@ def main():
                    help="hidden-perturbation robustness: flips, jumps, logit/prediction changes")
     p.add_argument("--quality", action="store_true",
                    help="evaluate zero-retrain continuous re-gating quality")
+    p.add_argument("--norm-topk", choices=["auto", "on", "off"], default="auto",
+                   help="renorm gathered top-k weights: auto=honor model.config.norm_topk_prob "
+                        "(OLMoE/Qwen ship false), on=force renorm, off=force native")
     p.add_argument("--sweep-layers", default=None,
                    help="comma list of block indices to sweep (default: all)")
     p.add_argument("--out", default=None, help="output JSON path")
