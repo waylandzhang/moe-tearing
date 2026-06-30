@@ -21,8 +21,9 @@ the block output by an O(1) amount — a *tear*. We give a geometric diagnostic 
   the tear, but boundary-normal perturbations of <1% relative magnitude flip experts and produce an
   output jump of ≈24% of the block-output norm.
 
-The tear is real, large, ubiquitous, layer-consistent, and cross-model; it is a *directional*
-inference liability, and at training time it *decomposes* rather than detonates. See
+The tear is real, large as a geometric per-block jump, and layer-consistent across the tested
+layers of both released families; it is a *directional* inference liability, and at training time
+it *decomposes* rather than detonates. See
 [`paper.pdf`](paper.pdf) for the full account.
 
 ## Repository layout
